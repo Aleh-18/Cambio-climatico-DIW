@@ -18,30 +18,31 @@
     </header>
 
         <section>
-            <div>
-                <h2>Cómo el cambio climático afecta a la agricultura</h2>
-                <p>La agricultura es una de las actividades más vulnerables al cambio climático. Las variaciones de temperatura y los patrones de lluvia irregulares afectan directamente los cultivos, lo que tiene un impacto global en la seguridad alimentaria.</p>
-                <article class="causa">
-                    <img src="img/Cultivos.jpg" alt="Campos de cultivo secos">
-                    <div class="texto-causa">
+                <h2 class="titulos">Cómo el cambio climático afecta a la agricultura</h2>
+                <div class="textopromedio">
+                    <p>La agricultura es una de las actividades más vulnerables al cambio climático.</p>
+                    <p>Las variaciones de temperatura y los patrones de lluvia irregulares afectan directamente los cultivos, lo que tiene un impacto global en la seguridad alimentaria.</p>
+                </div>
+               
+                    <img class="img-agricola" src="img/Cultivos.jpg" alt="Campos de cultivo secos">
+                    <div class="texto-agricola">
                         <h4>Impacto directo en los cultivos</h4>
                         <p>El aumento de la temperatura acelera el desarrollo de las plantas, pero reduce la producción de biomasa, lo que provoca una disminución en la calidad y cantidad de las cosechas. Además, las sequías y las inundaciones extremas dañan directamente los cultivos, llevando a pérdidas masivas.</p>
                     </div>
-                </article>
-                <article class="causa">
-                    <img src="img/Suelo-agricola.jpg" alt="Suelo de cultivo agrietado">
-                    <div class="texto-causa">
+                    <div class="texto-agricola">
                         <h4>Degradación del suelo y plagas</h4>
                         <p>Las altas temperaturas y la falta de lluvia degradan la calidad del suelo, erosionando su fertilidad y volviéndolo menos productivo. Al mismo tiempo, el clima más cálido y húmedo en muchas regiones favorece la proliferación de plagas y enfermedades que afectan a los cultivos, lo que obliga a usar más pesticidas o a perder cosechas enteras.</p>
                     </div>
-                </article>
-                <article class="causa">
-                    <img src="img/Seguridad-alimentaria.jpg" alt="Cestas con alimentos">
-                    <div class="texto-causa">
+                    <img class="img-agricola" src="img/Suelo-agricola.jpg" alt="Suelo de cultivo agrietado">
+                    
+                
+                
+                    <img class="img-agricola" src="img/Seguridad-alimentaria.jpg" alt="Cestas con alimentos">
+                    <div class="texto-agricola">
                         <h4>Seguridad alimentaria global</h4>
                         <p>La disminución de la producción agrícola tiene un impacto directo en los precios de los alimentos, que aumentan, afectando especialmente a las poblaciones más pobres. Se estima que, para el 2030, el cambio climático podría empujar a millones de personas a la pobreza, exacerbando la inseguridad alimentaria en países en desarrollo que ya luchan por alimentar a sus poblaciones.</p>
                     </div>
-                </article>
+                
                 <h3>Soluciones para la agricultura</h3>
                 <table class="tabla-soluciones">
                     <thead>
@@ -69,11 +70,46 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
         </section>
-        <!--Poner formulario-->
-        <footer>
-        <!-- Poner fuentes mi nombre y tal -->
-        </footer>
+        <form class="boletin">
+            <h3>Suscríbete para enterarte de nuevas novedades</h3>
+            <p>Nombre:</p>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            <p>Apellidos:</p>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos">
+            <p>Correo electrónico:</p>
+            <input type="email" id="correo" name="correo" placeholder="Tu correo">
+            <p>Contraseña:</p><br>
+            <input type="password" placeholder="contraseña" name="pw">
+            <div>¿Qué te impactó más?</div>
+            <div class="opciones">
+                <p><input type="radio" name="impacto" value="El oso polar">El oso polar</p>
+                <p><input type="radio" name="impacto" value="Biodiversidad">Biodiversidad</p>
+                <p><input type="radio" name="impacto" value="Soluciones">Soluciones</p>
+                <p><input type="radio" name="impacto" value="Datos">Datos</p>
+            </div>
+            <div>Tema de interés</div>
+            <select name="intereses">
+                <option value=""></option>
+                <option value="Impacto en animales">Impacto en animales</option>
+                <option value="Bosques y deforestacion">Bosques y reforestación</option>
+                <option value="Transporte sostenible">Transporte sostenible</option>
+            </select>
+            <span>Acciones que has realizado para combatir el cambio climático:</span>
+            <div class="acciones">
+                <p><input type="checkbox" name="acciones[]" value="Reciclaje">Reciclaje</p>
+                <p><input type="checkbox" name="acciones[]" value="Reducir el uso de plásticos">Reducir el uso de plásticos</p>
+                <p><input type="checkbox" name="acciones[]" value="Usar transporte sostenible">Usar transporte sostenible</p>
+                <p><input type="checkbox" name="acciones[]" value="Ahorrar energía en casa">Ahorrar energía en casa</p>
+            </div>
+            <div>Sugerencias:</div>
+            <input type="text" name="sugerencias" placeholder="Escribe aquí tu sugerencia">
+            <div class="condiciones-p">
+                <input type="checkbox" name="condiciones" value="acepto" id="condiciones">
+                <p style="margin:0;">Acepto los términos y condiciones</p>
+            </div>
+            <button>Enviar</button>
+            <button type="reset">Borrar todo</button>
+        </form>
     </body>
 </html>

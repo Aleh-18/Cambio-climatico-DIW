@@ -134,7 +134,7 @@ section {
 
 .consecuencia-texto{
     display: inline-block;
-    width: 300px;
+    width: 400px;
     vertical-align: middle;
     margin-left: 67px; /*para sacar el margin body-width de imagenes x2 /4 */
 }
@@ -242,3 +242,60 @@ section {
 }
 
 /* Final del formulario*/
+
+
+/*Primer section de la pagina de agricultura seguimos con los mismos px 1430px*/
+
+.img-agricola{
+    display: inline-block;
+    width: 400px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.texto-agricola{
+     display: inline-block;
+    width: 1000px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/*final del section body-400 -10000 - 10 = 20px*/
+
+/* Tabla*/
+.tabla-soluciones {
+    width: 1400px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-soluciones thead tr {
+    background-color: #673ab7; 
+    color: white;
+}
+
+.tabla-soluciones th {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #b39ddb;
+}
+
+.tabla-soluciones td {
+    padding: 12px 15px;
+    border: 1px solid #b39ddb;
+    vertical-align: top;
+    width: 466px /*la tercera parte de todo el ancho*/
+}
+
+.tabla-soluciones tbody tr:nth-child {
+    background-color: #f3f0f7;
+}
+
+.tabla-soluciones tbody tr:hover {
+    background-color: #e0d8f0; /
+}
+
+
+
+
