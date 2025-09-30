@@ -145,10 +145,10 @@ section {
 
 /* Formulario --> body - 44px = 1431px */ 
 .boletin {
-    width: 1430px; /*redondeo a 1 px para trabajar mejor*/
+    width: 1430px;
     margin: 20px auto;
-    padding: 30px; /* Incrementado para mejor espaciado interno */
-    background: #d1c4e9; /* violeta medio */
+    padding: 30px;
+    background: #d1c4e9;
     border: 2px solid #b39ddb;
     border-radius: 10px;
 }
@@ -167,12 +167,12 @@ section {
 .boletin input[type="email"],
 .boletin input[type="password"],
 .boletin select {
+    
     width: 300px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #b39ddb;
     border-radius: 5px;
-    box-sizing: border-box;
 }
 
 .boletin div {
@@ -218,7 +218,6 @@ section {
     margin-right: 10px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
 }
