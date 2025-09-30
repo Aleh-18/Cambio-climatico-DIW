@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilochulo.css">
+    <title>Suscripción - Cambio Climático</title>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 40px; text-align: center; font-weight: bold;">Suscríbete para enterarte de nuevas novedades</h1>
+        <div class="nav">
+            <h4><a href="index.html">Inicio</a></h4>
+            <h4><a href="agricultura-y-alimentos.html">Agricultura y alimentos</a></h4>
+        </div>
+    </header>
+    <main>
+        <form class="boletin">
+            <h3>Suscríbete para enterarte de nuevas novedades</h3>
+            <p>Nombre:</p>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            <p>Apellidos:</p>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos">
+            <p>Correo electrónico:</p>
+            <input type="email" id="correo" name="correo" placeholder="Tu correo">
+            <p>Contraseña:</p><br>
+            <input type="password" placeholder="contraseña" name="pw">
+            <div>¿Qué te impactó más?</div>
+            <div class="opciones">
+                <p><input type="radio" name="impacto" value="El oso polar">El oso polar</p>
+                <p><input type="radio" name="impacto" value="Biodiversidad">Biodiversidad</p>
+                <p><input type="radio" name="impacto" value="Soluciones">Soluciones</p>
+                <p><input type="radio" name="impacto" value="Datos">Datos</p>
+            </div>
+            <div>Tema de interés</div>
+            <select name="intereses">
+                <option value=""></option>
+                <option value="Impacto en animales">Impacto en animales</option>
+                <option value="Bosques y deforestacion">Bosques y reforestación</option>
+                <option value="Transporte sostenible">Transporte sostenible</option>
+            </select>
+            <span>Acciones que has realizado para combatir el cambio climático:</span>
+            <div class="acciones">
+                <p><input type="checkbox" name="acciones[]" value="Reciclaje">Reciclaje</p>
+                <p><input type="checkbox" name="acciones[]" value="Reducir el uso de plásticos">Reducir el uso de plásticos</p>
+                <p><input type="checkbox" name="acciones[]" value="Usar transporte sostenible">Usar transporte sostenible</p>
+                <p><input type="checkbox" name="acciones[]" value="Ahorrar energía en casa">Ahorrar energía en casa</p>
+            </div>
+            <div>Sugerencias:</div>
+            <input type="text" name="sugerencias" placeholder="Escribe aquí tu sugerencia">
+            <div class="condiciones-p">
+                <input type="checkbox" name="condiciones" value="acepto" id="condiciones">
+                <p style="margin:0;">Acepto los términos y condiciones</p>
+            </div>
+            <button>Enviar</button>
+            <button type="reset">Borrar todo</button>
+        </form>
+    </main>
+</body>
+</html>
