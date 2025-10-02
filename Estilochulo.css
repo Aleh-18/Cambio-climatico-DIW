@@ -1,300 +1,271 @@
-
 /*Base*/
 
 body {
-    margin: 0 auto;
-    width: 1475px; /* ancho total del body */
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f9fafb;
-    color: #333;
+margin: 0 auto;
+width: 1475px; /* ancho total del body (1475px) */
+font-family: Arial, Helvetica, sans-serif;
+background: #f9fafb;
+color: #333;
 }
-
-
-
 
 /* header = body = 1475px */
 header {
-    width: 1475px;
-    background: #8fff82;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    border-bottom: 5px solid #044704;
+width: 1475px; /* mismo ancho que el body (1475px) */
+background: #8fff82;
+color: #333;
+text-align: center;
+padding: 20px;
+border-bottom: 5px solid #044704;
 }
 
 header h1 {
-    margin: 0;
+margin: 0;
 }
 
-
 .nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
+list-style: none;
+padding: 0;
+margin: 10px 0 0 0;
 }
 
 .nav li {
-    display: inline-block; /* permitido */
-    margin: 0 15px;
+display: inline-block;
+margin: 0 15px;
 }
 
 .nav a {
-    text-decoration: none;
-    color: #2e7d32;
-    font-weight: bold;
+text-decoration: none;
+color: #2e7d32;
+font-weight: bold;
 }
 
 .nav a:hover {
-    color: #1b5e20;
+color: #1b5e20;
 }
 
 /*final del header*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Primer section --> body - 44px = 1431px */
+/* Primer section --> 1475px(body) - 40px(padding) - 4px(border) = 1431px(section) */
 section {
-    width: 1430px; /*redondeo a 1 px para trabajar mejor*/
-    margin: 20px auto;
-    padding: 20px;
-    background: #ede7f6; /* violeta claro */
-    border: 2px solid #b39ddb;
-    border-radius: 10px;
+width: 1430px; /*redondeo a 1 px para trabajar mejor*/
+margin: 20px auto;
+padding: 20px;
+background: #ede7f6;
+border: 2px solid #b39ddb;
+border-radius: 10px;
 }
 
 .titulos{
-    text-align: center;
+text-align: center;
 }
 
 .textopromedio{
-    color:dodgerblue
+color:dodgerblue
 }
 
 #img-cambioclimatico{
-    display: inline-block;
-    width: 400px;
-    vertical-align: middle;
+display: inline-block;
+width: 400px; /* ancho fijo para la imagen */
+vertical-align: middle;
 }
 
 #lista-derecha{
-    display: inline-block;
-    width: 1020px;
-    vertical-align: middle;
-    
+display: inline-block;
+width: 970px; /* ancho restante para la lista: 1430px(section) - 400px(img) = 1030px - 60px(espacio) = 970px */
+vertical-align: middle;
+
 }
 
+/*1430px(section) - 400px(img) - 970px(lista) = 60px*/
+/*Final del primer section en la caja sobrarían unos 60px de ancho*/
 
-/*Final del primer section en la caja sobrarian unos 10px de ancho */
-
-
-
-
-
-
-/* Segundo section exactamente igual --> body - 44px = 1431px */ /*redondeo 1 px para trabajar mejor*/
+/* Segundo section exactamente igual se usa el mismo .section --> 1475px(body) - 40px(padding) - 4px(border) = 1431px(section) */
+/*redondeo 1 px para trabajar mejor*/
 
 .causa-img{
-    display: inline-block;
-    width: 580px;
-    margin-left: 67px; /*para sacar el margin body-width de imagenes x2 /4 */
-    height: 280px;
+display: inline-block;
+width: 580px; /* ancho imagen */
+margin-left: 67px; /*para centrar (1430px(section) - 2*580px(imagenes)) / 4 = 67.5px ≈ 67px  redondeo illo*/
+height: 280px;
 }
 
 .causa-texto{
-    display: inline-block;
-    width: 580px;
-    margin-left: 67px; /*para sacar el margin body-width de imagenes x2 /4 */
-    height: 280px;
+display: inline-block;
+width: 580px; /* ancho texto */
+margin-left: 67px; /*igual que img para simetría */
+height: 280px;
 }
 
-/* Final del segundo section   /
+/* Final del segundo section --> 580px(img) + 580px(texto) + 67px(margen img) + 67px(margen texto) = 1294px ocupados */
+/* Sobran 1430px(section) - 1294px(ocupado) = 136px de espacio libre */
 
-
-
-
-
-
-/*ultimo section del mismo tamaño y con las mismas condicioes 1430px*/
+/*ultimo section del mismo tamaño y con las mismas condiciones --> 1430px */
 .consecuencia-img{
-    display: inline-block;
-    width: 550px;
-    margin-left: 67px; /*para sacar el margin body-width de imagenes x2 /4 */
-    height: 300px;
+display: inline-block;
+width: 550px;
+margin-left: 67px; /*para centrar */
+height: 300px;
 }
 
 .consecuencia-texto{
-    display: inline-block;
-    width: 400px;
-    vertical-align: middle;
-    margin-left: 67px; /*para sacar el margin body-width de imagenes x2 /4 */
+display: inline-block;
+width: 400px;
+vertical-align: middle;
+margin-left: 67px; /*para centrar */
 }
 
-/*final del ultimo section 
+/* Final del último section --> 550px(img) + 400px(texto) + 67px(margen img) + 67px(margen texto) = 1084px ocupados */
+/* Sobran 1430px(section) - 1084px(ocupado) = 346px de espacio libre */
 
-/* ==================== FORMULARIO ==================== */
-
-/* Formulario --> body - 44px = 1431px */ 
+/* Formulario --> 1475px(body) - 60px(padding) - 4px(border) = 1411px(section) */
 .boletin {
-    width: 1430px;
-    margin: 20px auto;
-    padding: 30px;
-    background: #d1c4e9;
-    border: 2px solid #b39ddb;
-    border-radius: 10px;
+width: 1410px; /*redondeo a 1 px para trabajar mejor*/
+margin: 20px auto;
+padding: 30px;
+background: #d1c4e9;
+border: 2px solid #b39ddb;
+border-radius: 10px;
 }
 
 .boletin h3 {
-    text-align: center;
-    color: #4527a0;
-    margin-top: 0;
+text-align: center;
+color: #4527a0;
+margin-top: 0;
 }
 
 .boletin p {
-    margin: 10px 0 5px 0;
+margin: 10px 0 5px 0;
 }
 
 .boletin input[type="text"],
 .boletin input[type="email"],
 .boletin input[type="password"],
 .boletin select {
-    
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #b39ddb;
-    border-radius: 5px;
+width: 300px; /* ancho fijo para campos */
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #b39ddb;
+border-radius: 5px;
 }
 
 .boletin div {
-    margin: 15px 0 5px 0;
-    font-weight: bold;
-    color: #673ab7;
+margin: 15px 0 5px 0;
+font-weight: bold;
+color: #673ab7;
 }
 
 .opciones, .acciones {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+margin-bottom: 20px;
 }
 
 .opciones p, .acciones p {
-    margin: 0;
-    font-weight: normal;
-    color: #333;
+margin: 0;
+font-weight: normal;
+color: #333;
 }
 
 .boletin span {
-    display: block;
-    margin: 15px 0 5px 0;
-    font-weight: bold;
-    color: #673ab7;
+display: block;
+margin: 15px 0 5px 0;
+font-weight: bold;
+color: #673ab7;
 }
 
 .condiciones-p {
-    display: flex;
-    align-items: center;
-    margin: 20px 0 20px 0;
-    font-weight: normal;
-    color: #333;
+display: flex;
+align-items: center;
+margin: 20px 0 20px 0;
+font-weight: normal;
+color: #333;
 }
 
 .condiciones-p input[type="checkbox"] {
-    margin-right: 10px;
+margin-right: 10px;
 }
 
 .boletin button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+padding: 10px 20px;
+margin-right: 10px;
+border: none;
+border-radius: 5px;
+font-weight: bold;
+transition: background-color 0.3s;
 }
 
 .boletin button:first-of-type { /* Enviar */
-    background-color: #4caf50;
-    color: white;
+background-color: #4caf50;
+color: white;
 }
 
 .boletin button:first-of-type:hover {
-    background-color: #388e3c;
+background-color: #388e3c;
 }
 
 .boletin button:last-of-type { /* Borrar todo */
-    background-color: #f44336;
-    color: white;
+background-color: #f44336;
+color: white;
 }
 
 .boletin button:last-of-type:hover {
-    background-color: #d32f2f;
+background-color: #d32f2f;
 }
 
-/* Final del formulario*/
+/* Final del formulario --> ocupa 1410px de ancho de contenido (ancho total real = 1474px) */
 
-
-/*Primer section de la pagina de agricultura seguimos con los mismos px 1430px*/
+/*Primer section de la pagina de agricultura seguimos con los mismos px --> 1430px*/
 
 .img-agricola{
-    display: inline-block;
-    width: 400px;
-    vertical-align: middle;
-    border-radius: 10px;
+display: inline-block;
+width: 400px; /* ancho de la imagen */
+vertical-align: middle;
+border-radius: 10px;
 }
 
 .texto-agricola{
-     display: inline-block;
-    width: 1000px;
-    vertical-align: middle;
-    margin-left: 10px;
+display: inline-block;
+width: 970px; /* ancho del texto: 1430px(section) - 400px(img) - 60px(espacio) = 970px */
+vertical-align: middle;
+margin-left: 30px; /*ajustado para mejor distribución */
 }
 
-/*final del section body-400 -10000 - 10 = 20px*/
+/*final del section --> 400px(img) + 970px(texto) + 30px(margen) = 1400px */
+/* Sobran 1430px(section) - 1400px(contenido del section) = 30px(sobrante) */
 
 /* Tabla*/
 .tabla-soluciones {
-    width: 1400px;
-    border-collapse: collapse;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 1430px; /* mismo ancho que el section (1430px) */
+border-collapse: collapse;
+margin-top: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tabla-soluciones thead tr {
-    background-color: #673ab7; 
-    color: white;
+background-color: #673ab7;
+color: white;
 }
 
 .tabla-soluciones th {
-    padding: 15px;
-    text-align: left;
-    border: 1px solid #b39ddb;
+padding: 15px;
+text-align: left;
+border: 1px solid #b39ddb;
 }
 
 .tabla-soluciones td {
-    padding: 12px 15px;
-    border: 1px solid #b39ddb;
-    vertical-align: top;
-    width: 466px /*la tercera parte de todo el ancho*/
+padding: 12px 15px;
+border: 1px solid #b39ddb;
+vertical-align: top;
+width: 476px; /* la tercera parte de 1430px: 1430px(tabla)/3 = 476.66px ≈ 476px */
 }
 
 .tabla-soluciones tbody tr:nth-child {
-    background-color: #f3f0f7;
+background-color: #f3f0f7;
 }
 
 .tabla-soluciones tbody tr:hover {
-    background-color: #e0d8f0; /
+background-color: #e0d8f0; /* color al pasar el ratón */
 }
 
-
-
-
+/* Final de la tabla --> 1430px de ancho total (mismo que el section principal) */
